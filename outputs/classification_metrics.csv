@@ -1,0 +1,4 @@
+model,AUC,accuracy,precision,recall,F1,train_sec
+Logistic Regression,0.876,0.7913,0.7915,0.7913,0.7912,23.5
+Random Forest,0.8866,0.8068,0.8083,0.8068,0.8065,76.5
+Gradient Boosted Trees,0.8947,0.8125,0.8132,0.8125,0.8124,76.0
