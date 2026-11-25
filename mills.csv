@@ -1,0 +1,86 @@
+mill_id,mill_name,province,district,capacity_tcd,technology_level,established_year,has_cogeneration,has_distillery,ownership
+M001,PB-Sugar-Mill-001,Punjab,Rahim Yar Khan,10100,Standard,2000,1,0,Private
+M002,PB-Sugar-Mill-002,Punjab,Rahim Yar Khan,12600,Standard,1998,0,0,PSX Listed
+M003,PB-Sugar-Mill-003,Punjab,Rahim Yar Khan,8800,Old,1952,0,0,PSX Listed
+M004,PB-Sugar-Mill-004,Punjab,Rahim Yar Khan,10600,Old,1988,0,0,Private
+M005,PB-Sugar-Mill-005,Punjab,Rahim Yar Khan,6600,Old,1956,0,0,Private
+M006,PB-Sugar-Mill-006,Punjab,Rahim Yar Khan,12500,Modern,2012,1,0,Private
+M007,PB-Sugar-Mill-007,Punjab,Rahim Yar Khan,7100,Modern,2000,1,0,Private
+M008,PB-Sugar-Mill-008,Punjab,Sargodha,12200,Modern,2009,1,1,Private
+M009,PB-Sugar-Mill-009,Punjab,Sargodha,9500,Old,1970,0,0,Private
+M010,PB-Sugar-Mill-010,Punjab,Sargodha,5700,Standard,1996,0,1,Private
+M011,PB-Sugar-Mill-011,Punjab,Sargodha,8700,Standard,1977,0,0,Private
+M012,PB-Sugar-Mill-012,Punjab,Jhang,11900,Modern,1997,1,0,Private
+M013,PB-Sugar-Mill-013,Punjab,Jhang,7200,Old,1969,0,0,Private
+M014,PB-Sugar-Mill-014,Punjab,Jhang,9800,Standard,1980,1,1,Private
+M015,PB-Sugar-Mill-015,Punjab,Muzaffargarh,5300,Standard,1975,0,0,PSX Listed
+M016,PB-Sugar-Mill-016,Punjab,Muzaffargarh,6200,Standard,1999,0,0,Private
+M017,PB-Sugar-Mill-017,Punjab,Muzaffargarh,8500,Standard,1978,0,0,Private
+M018,PB-Sugar-Mill-018,Punjab,Bahawalpur,5700,Modern,2009,1,0,Private
+M019,PB-Sugar-Mill-019,Punjab,Pakpattan,8500,Standard,2003,1,0,Private
+M020,PB-Sugar-Mill-020,Punjab,Dera Ghazi Khan,8600,Standard,1989,0,0,PSX Listed
+M021,PB-Sugar-Mill-021,Punjab,Kasur,5700,Standard,1978,1,1,Private
+M022,PB-Sugar-Mill-022,Punjab,Rajanpur,7700,Standard,1988,1,1,PSX Listed
+M023,PB-Sugar-Mill-023,Punjab,Rajanpur,6500,Standard,1980,0,0,PSX Listed
+M024,PB-Sugar-Mill-024,Punjab,Layyah,11000,Standard,1990,0,1,Private
+M025,PB-Sugar-Mill-025,Punjab,Layyah,9800,Old,1957,0,0,Private
+M026,PB-Sugar-Mill-026,Punjab,Bhakkar,7000,Standard,1985,0,0,Private
+M027,PB-Sugar-Mill-027,Punjab,Bhakkar,4600,Standard,1982,0,0,PSX Listed
+M028,PB-Sugar-Mill-028,Punjab,Toba Tek Singh,17400,Modern,1999,0,1,PSX Listed
+M029,PB-Sugar-Mill-029,Punjab,Toba Tek Singh,8100,Standard,1976,0,0,PSX Listed
+M030,PB-Sugar-Mill-030,Punjab,Faisalabad,10200,Standard,2001,1,0,Private
+M031,PB-Sugar-Mill-031,Punjab,Faisalabad,9900,Old,1983,0,0,Private
+M032,PB-Sugar-Mill-032,Punjab,Mandi Bahauddin,8700,Standard,1984,0,0,PSX Listed
+M033,PB-Sugar-Mill-033,Punjab,Mandi Bahauddin,4600,Standard,1981,0,0,PSX Listed
+M034,PB-Sugar-Mill-034,Punjab,Chiniot,11200,Modern,2002,1,0,Private
+M035,PB-Sugar-Mill-035,Punjab,Chiniot,6900,Old,1973,0,1,Private
+M036,PB-Sugar-Mill-036,Punjab,Sheikhupura,5000,Modern,2009,0,0,Private
+M037,PB-Sugar-Mill-037,Punjab,Sheikhupura,5700,Modern,2005,1,0,Private
+M038,PB-Sugar-Mill-038,Punjab,Okara,16600,Modern,1998,1,1,PSX Listed
+M039,PB-Sugar-Mill-039,Punjab,Okara,12300,Modern,2010,1,1,PSX Listed
+M040,PB-Sugar-Mill-040,Punjab,Vehari,6000,Standard,1978,0,0,Private
+M041,PB-Sugar-Mill-041,Punjab,Vehari,12500,Standard,1978,0,1,PSX Listed
+M042,PB-Sugar-Mill-042,Punjab,Lodhran,4900,Standard,2004,0,0,Private
+M043,PB-Sugar-Mill-043,Punjab,Lodhran,9200,Standard,2000,0,0,Private
+M044,PB-Sugar-Mill-044,Punjab,Khanewal,6900,Modern,1997,1,0,Private
+M045,PB-Sugar-Mill-045,Punjab,Khanewal,4200,Old,1961,0,0,Private
+M046,SD-Sugar-Mill-046,Sindh,Ghotki,8800,Modern,2012,1,0,Private
+M047,SD-Sugar-Mill-047,Sindh,Ghotki,7900,Standard,2004,1,0,PSX Listed
+M048,SD-Sugar-Mill-048,Sindh,Ghotki,7200,Modern,2007,1,0,Private
+M049,SD-Sugar-Mill-049,Sindh,Sukkur,7900,Standard,1995,0,1,Private
+M050,SD-Sugar-Mill-050,Sindh,Sukkur,9200,Standard,1977,0,0,Private
+M051,SD-Sugar-Mill-051,Sindh,Khairpur,4100,Standard,1976,0,1,Private
+M052,SD-Sugar-Mill-052,Sindh,Khairpur,9700,Standard,1982,0,0,Private
+M053,SD-Sugar-Mill-053,Sindh,Khairpur,9300,Old,1979,0,0,Private
+M054,SD-Sugar-Mill-054,Sindh,Naushahro Feroze,8100,Standard,1989,0,0,PSX Listed
+M055,SD-Sugar-Mill-055,Sindh,Naushahro Feroze,12600,Modern,2009,0,0,Private
+M056,SD-Sugar-Mill-056,Sindh,Shaheed Benazirabad,8000,Standard,1985,1,0,PSX Listed
+M057,SD-Sugar-Mill-057,Sindh,Shaheed Benazirabad,6200,Old,1976,0,0,PSX Listed
+M058,SD-Sugar-Mill-058,Sindh,Shaheed Benazirabad,7800,Modern,1997,1,1,PSX Listed
+M059,SD-Sugar-Mill-059,Sindh,Shaheed Benazirabad,6700,Modern,2012,1,0,Private
+M060,SD-Sugar-Mill-060,Sindh,Sanghar,11600,Standard,1984,0,0,Private
+M061,SD-Sugar-Mill-061,Sindh,Sanghar,5600,Standard,1990,0,0,Private
+M062,SD-Sugar-Mill-062,Sindh,Sanghar,8500,Old,1967,0,0,PSX Listed
+M063,SD-Sugar-Mill-063,Sindh,Matiari,5200,Standard,1989,0,0,Private
+M064,SD-Sugar-Mill-064,Sindh,Matiari,19200,Modern,2010,1,0,Private
+M065,SD-Sugar-Mill-065,Sindh,Matiari,5500,Old,1985,0,0,Private
+M066,SD-Sugar-Mill-066,Sindh,Hyderabad,7100,Old,1982,1,0,PSX Listed
+M067,SD-Sugar-Mill-067,Sindh,Hyderabad,10700,Old,1965,1,1,Private
+M068,SD-Sugar-Mill-068,Sindh,Tando Allahyar,7100,Modern,2011,0,0,PSX Listed
+M069,SD-Sugar-Mill-069,Sindh,Tando Allahyar,7700,Standard,1986,0,1,PSX Listed
+M070,SD-Sugar-Mill-070,Sindh,Tando Allahyar,19600,Modern,2000,1,0,Private
+M071,SD-Sugar-Mill-071,Sindh,Tando Muhammad Khan,7800,Standard,1979,1,1,PSX Listed
+M072,SD-Sugar-Mill-072,Sindh,Tando Muhammad Khan,8000,Old,1980,0,1,Private
+M073,SD-Sugar-Mill-073,Sindh,Badin,7400,Old,1974,0,1,PSX Listed
+M074,SD-Sugar-Mill-074,Sindh,Badin,10400,Old,1967,0,0,Private
+M075,SD-Sugar-Mill-075,Sindh,Badin,15900,Modern,2001,1,1,Private
+M076,SD-Sugar-Mill-076,Sindh,Thatta,6200,Standard,1982,0,1,PSX Listed
+M077,SD-Sugar-Mill-077,Sindh,Thatta,6400,Standard,1986,1,1,Private
+M078,KP-Sugar-Mill-078,KPK,Charsadda,5000,Standard,1991,0,1,PSX Listed
+M079,KP-Sugar-Mill-079,KPK,Charsadda,15700,Modern,2000,1,0,PSX Listed
+M080,KP-Sugar-Mill-080,KPK,Mardan,9600,Standard,1999,1,0,PSX Listed
+M081,KP-Sugar-Mill-081,KPK,Mardan,9300,Old,1968,0,0,PSX Listed
+M082,KP-Sugar-Mill-082,KPK,Peshawar,17700,Modern,1998,1,0,Private
+M083,KP-Sugar-Mill-083,KPK,Dera Ismail Khan,11500,Modern,2010,1,0,Private
+M084,KP-Sugar-Mill-084,KPK,Dera Ismail Khan,15000,Modern,1995,1,1,PSX Listed
+M085,KP-Sugar-Mill-085,KPK,Dera Ismail Khan,17800,Modern,2003,0,0,Private
