@@ -1,0 +1,4 @@
+model,RMSE,MAE,R2,train_sec
+Linear Regression,0.2591,0.2034,0.8029,7.3
+Random Forest,0.2279,0.1786,0.8475,43.1
+Gradient Boosted Trees,0.1905,0.1506,0.8934,86.9

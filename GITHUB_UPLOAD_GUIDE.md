@@ -15,7 +15,8 @@
 3. Open the unzipped `pakistan-sugar-mills-analytics` folder, select **everything inside it**
    (`data`, `docs`, `notebooks`, `outputs`, `src`, `README.md`, `requirements.txt`, `.gitignore`, this guide)
    and drag it onto the GitHub page. Folders keep their structure in Chrome and Edge.
-4. Wait until every file is listed (about 30 files, ~90 MB in total; each file is under GitHub's 25 MB browser limit).
+4. Wait until every file is listed (about 45 files, ~45 MB in total; the largest file is under 5 MB, well within GitHub's 25 MB browser limit).
+   Do NOT include the .zip file itself in the upload: at ~45 MB it is over the limit and the commit will fail.
 5. Commit message: `Initial commit: Pakistan sugar mills big data project` → **Commit changes**.
 
 > `.gitignore` starts with a dot, so it may be hidden on your computer. If it does not upload, it is not critical.
@@ -46,7 +47,7 @@ Edit these on GitHub (click the file → pencil icon) or before uploading:
 1. Go to https://colab.research.google.com → **File → Open notebook → GitHub** tab.
 2. Paste `https://github.com/YOUR-USERNAME/pakistan-sugar-mills-analytics` and open `notebooks/Pakistan_Sugar_Mills_Analytics.ipynb`.
 3. Check `GITHUB_USERNAME` in the first code cell, then **Runtime → Run all**.
-4. The first cell installs PySpark and clones your repo with the data. The full run takes roughly 15 to 25 minutes on the free Colab tier
+4. The first cell installs PySpark and clones your repo with the data. The full run takes roughly 10 to 20 minutes on the free Colab tier
    (most of it is model training).
 
 If cloning fails (for example the repo is private), the notebook regenerates the dataset itself only if `src/generate_data.py` is present,

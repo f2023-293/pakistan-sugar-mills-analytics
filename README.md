@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
 
 End-to-end PySpark project on Pakistan's sugar industry for the courses **Big Data Analytics** and **Data Warehouse & Data Mining**.
-It ingests ~2.5 million cane procurement records, builds a Parquet data warehouse, runs OLAP queries, trains Spark MLlib models and applies
+It ingests ~1 million cane procurement records, builds a Parquet data warehouse, runs OLAP queries, trains Spark MLlib models and applies
 two data mining techniques (K-Means clustering and FP-Growth association rules).
 
 ## Problem
@@ -22,7 +22,7 @@ and **large performance gaps between old and modern mills**. This project analys
 | Regression | Linear Regression, Random Forest, Gradient Boosted Trees (+ hyper-parameter tuning) to predict daily sugar recovery % | ML |
 | Classification | Logistic Regression, Random Forest, Gradient Boosted Trees to predict late grower payments | ML |
 | Clustering | K-Means (silhouette + elbow) to segment the 85 mills | Data Mining |
-| Association rules | FP-Growth on ~614k receipt "baskets" | Data Mining |
+| Association rules | FP-Growth on ~245k receipt "baskets" | Data Mining |
 
 ![Schema](docs/star_schema.png)
 
@@ -38,23 +38,24 @@ and **large performance gaps between old and modern mills**. This project analys
 
 | File | Rows | Grain |
 |---|---|---|
-| `cane_procurement/procurement_<season>.csv.gz` (10 files) | 2,458,352 | one cane delivery (weighbridge receipt) |
-| `daily_crushing.csv.gz` | 85,864 | one mill on one crushing day |
+| `cane_procurement/procurement_<season>.csv.gz` (10 files) | 980,704 | one cane delivery (weighbridge receipt) |
+| `daily_crushing.csv.gz` | 85,431 | one mill on one crushing day |
 | `mills.csv` | 85 | sugar mill |
 | `growers.csv.gz` | 85,867 | cane grower |
 | `varieties.csv`, `districts.csv` | 11 / 36 | lookups |
 
 The raw data intentionally contains duplicates, missing values and impossible lab readings so the cleaning step is realistic.
-Run `python src/generate_data.py --scale 4` to create ~10 million receipts for a heavier Spark workload.
+The default dataset is kept at ~1 million receipts (about 40 MB) so it uploads easily to GitHub and runs in ~15 minutes on Colab.
+Run `python src/generate_data.py --scale 1` for ~2.5 million receipts, or `--scale 4` for ~10 million, for a heavier Spark workload.
 
 ## Key results
 | Task | Best model / output | Score |
 |---|---|---|
-| Daily recovery % (test = unseen seasons 2023-24, 2024-25) | Gradient Boosted Trees | R² ≈ 0.91, RMSE ≈ 0.18 |
+| Daily recovery % (test = unseen seasons 2023-24, 2024-25) | Gradient Boosted Trees | R² ≈ 0.89, RMSE ≈ 0.19 |
 | Late payment (> 15 days) | Gradient Boosted Trees | AUC ≈ 0.89, accuracy ≈ 81% |
-| Mill segmentation | K-Means, k = 5 | silhouette ≈ 0.40 |
-| Association rules | FP-Growth | ~8,600 rules, top lift ≈ 2.6 |
-| Storage | zstd Parquet vs CSV.gz | ~33% smaller, ~8x faster seasonal query |
+| Mill segmentation | K-Means, k = 5 | silhouette ≈ 0.43 |
+| Association rules | FP-Growth | ~8,500 rules, top lift ≈ 2.6 |
+| Storage | zstd Parquet vs CSV.gz | ~30% smaller, over 2x faster seasonal query |
 
 Highlights: incoming cane quality (pol %) drives recovery; recovery peaks in January-February; fresh, low-trash cane of high-sucrose
 varieties such as CPF-249 is strongly associated with high pol; April cane is associated with low pol; small growers selling to Sindh
@@ -87,7 +88,7 @@ pakistan-sugar-mills-analytics/
 
 ## How to run
 **Google Colab (recommended):** click the badge above, set `GITHUB_USERNAME` in the first code cell, then *Runtime → Run all*
-(about 15 to 25 minutes on the free tier).
+(about 10 to 20 minutes on the free tier).
 
 **Locally:** needs Python 3.9+ and Java 11 or 17.
 ```bash
